@@ -1299,8 +1299,8 @@ margin-bottom: 60px;}
 
 /* ---------- Arrow Buttons (Desktop) ---------- */
 .arrow {
-  position: absolute;
-  top: 225%;
+  /* position: absolute;
+  top: 225%; */
   transform: translateY(-50%);
   background-color: #214e34;
   color: white;
@@ -1311,6 +1311,7 @@ margin-bottom: 60px;}
   font-size: 22px;
   z-index: 10;
   transition: background 0.3s ease;
+ 
 }
 
 .arrow:hover {
@@ -1318,11 +1319,14 @@ margin-bottom: 60px;}
 }
 
 .arrow.left {
-  left: 20%;
+  left: 20% !important;
+  margin-right: 10px !important;
+
 }
 
 .arrow.right {
-  right: 20%;
+  right: 20% !important;
+  margin-left: 10px !important;
 }
 
 /* ---------- Responsive Layouts ---------- */
@@ -1351,6 +1355,7 @@ margin-bottom: 60px;}
 
   .arrow.left {
   left: 0;
+  
 }
 
 .arrow.right {
@@ -1398,7 +1403,7 @@ margin-bottom: 60px;}
   }
 
   /* Move arrows below carousel */
-  .arrow {
+  /* .arrow {
     position: relative;
     top: auto;
     transform: none;
@@ -1412,7 +1417,7 @@ margin-bottom: 60px;}
 .arrow.right {
   right: 0px;
 }
-  
+   */
   /* Arrange arrows in a container below */
   .arrows-container {
     display: flex;
