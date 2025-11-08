@@ -901,6 +901,14 @@ text-align: left;
         flex: 0 0 200px;
         height: 280px;
     }
+
+    .hero-image img {
+  width: 100%;
+
+ 
+  
+  object-fit: contain; /* ensures whole image fits without cropping */
+}
     
     .stat-number {
         font-size: 40px;
