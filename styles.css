@@ -903,11 +903,10 @@ text-align: left;
     }
 
     .hero-image img {
-  width: 100%;
-
- 
-  
-  object-fit: contain; /* ensures whole image fits without cropping */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center; /* ensures top is visible */
 }
     
     .stat-number {
